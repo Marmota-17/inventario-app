@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "yXFyCf9WRS4=",
+  "dgSpecHash": "Y7hRf3ElfSY=",
   "success": true,
   "projectFilePath": "C:\\Users\\cesar\\OneDrive\\Desktop\\Estudios\\Projectos\\Sistema de Inventario\\inventario-app\\backend-dotnet\\Negocio\\Negocio.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\cesar\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\cesar\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\cesar\\.nuget\\packages\\npgsql\\9.0.3\\npgsql.9.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

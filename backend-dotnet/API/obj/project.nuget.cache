@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "abHSu4am16o=",
+  "dgSpecHash": "LGZSvouru9A=",
   "success": true,
-  "projectFilePath": "C:\\Users\\cesar\\OneDrive\\Desktop\\Estudios\\Projectos\\Sistema de Inventario\\inventario-app\\backend-dotnet\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\cesar\\OneDrive\\Desktop\\Estudios\\Projectos\\Sistema de Inventario\\inventario-app\\backend-dotnet\\api\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cesar\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\cesar\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

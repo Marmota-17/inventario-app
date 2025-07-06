@@ -1,0 +1,16 @@
+C:\Users\cesar\OneDrive\Desktop\Estudios\Projectos\Sistema de Inventario\inventario-app\backend-dotnet\Datos\bin\Debug\net9.0\Datos.deps.json
+C:\Users\cesar\OneDrive\Desktop\Estudios\Projectos\Sistema de Inventario\inventario-app\backend-dotnet\Datos\bin\Debug\net9.0\Datos.dll
+C:\Users\cesar\OneDrive\Desktop\Estudios\Projectos\Sistema de Inventario\inventario-app\backend-dotnet\Datos\bin\Debug\net9.0\Datos.pdb
+C:\Users\cesar\OneDrive\Desktop\Estudios\Projectos\Sistema de Inventario\inventario-app\backend-dotnet\Datos\bin\Debug\net9.0\Entidad.dll
+C:\Users\cesar\OneDrive\Desktop\Estudios\Projectos\Sistema de Inventario\inventario-app\backend-dotnet\Datos\bin\Debug\net9.0\Entidad.pdb
+C:\Users\cesar\OneDrive\Desktop\Estudios\Projectos\Sistema de Inventario\inventario-app\backend-dotnet\Datos\obj\Debug\net9.0\Datos.csproj.AssemblyReference.cache
+C:\Users\cesar\OneDrive\Desktop\Estudios\Projectos\Sistema de Inventario\inventario-app\backend-dotnet\Datos\obj\Debug\net9.0\Datos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cesar\OneDrive\Desktop\Estudios\Projectos\Sistema de Inventario\inventario-app\backend-dotnet\Datos\obj\Debug\net9.0\Datos.AssemblyInfoInputs.cache
+C:\Users\cesar\OneDrive\Desktop\Estudios\Projectos\Sistema de Inventario\inventario-app\backend-dotnet\Datos\obj\Debug\net9.0\Datos.AssemblyInfo.cs
+C:\Users\cesar\OneDrive\Desktop\Estudios\Projectos\Sistema de Inventario\inventario-app\backend-dotnet\Datos\obj\Debug\net9.0\Datos.csproj.CoreCompileInputs.cache
+C:\Users\cesar\OneDrive\Desktop\Estudios\Projectos\Sistema de Inventario\inventario-app\backend-dotnet\Datos\obj\Debug\net9.0\Datos.sourcelink.json
+C:\Users\cesar\OneDrive\Desktop\Estudios\Projectos\Sistema de Inventario\inventario-app\backend-dotnet\Datos\obj\Debug\net9.0\Datos.csproj.Up2Date
+C:\Users\cesar\OneDrive\Desktop\Estudios\Projectos\Sistema de Inventario\inventario-app\backend-dotnet\Datos\obj\Debug\net9.0\Datos.dll
+C:\Users\cesar\OneDrive\Desktop\Estudios\Projectos\Sistema de Inventario\inventario-app\backend-dotnet\Datos\obj\Debug\net9.0\refint\Datos.dll
+C:\Users\cesar\OneDrive\Desktop\Estudios\Projectos\Sistema de Inventario\inventario-app\backend-dotnet\Datos\obj\Debug\net9.0\Datos.pdb
+C:\Users\cesar\OneDrive\Desktop\Estudios\Projectos\Sistema de Inventario\inventario-app\backend-dotnet\Datos\obj\Debug\net9.0\ref\Datos.dll

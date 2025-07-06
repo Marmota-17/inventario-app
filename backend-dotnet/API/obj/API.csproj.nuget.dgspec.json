@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cesar\\OneDrive\\Desktop\\Estudios\\Projectos\\Sistema de Inventario\\inventario-app\\backend-dotnet\\API\\API.csproj": {}
+    "C:\\Users\\cesar\\OneDrive\\Desktop\\Estudios\\Projectos\\Sistema de Inventario\\inventario-app\\backend-dotnet\\api\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cesar\\OneDrive\\Desktop\\Estudios\\Projectos\\Sistema de Inventario\\inventario-app\\backend-dotnet\\API\\API.csproj": {
+    "C:\\Users\\cesar\\OneDrive\\Desktop\\Estudios\\Projectos\\Sistema de Inventario\\inventario-app\\backend-dotnet\\api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cesar\\OneDrive\\Desktop\\Estudios\\Projectos\\Sistema de Inventario\\inventario-app\\backend-dotnet\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\cesar\\OneDrive\\Desktop\\Estudios\\Projectos\\Sistema de Inventario\\inventario-app\\backend-dotnet\\api\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\cesar\\OneDrive\\Desktop\\Estudios\\Projectos\\Sistema de Inventario\\inventario-app\\backend-dotnet\\API\\API.csproj",
+        "projectPath": "C:\\Users\\cesar\\OneDrive\\Desktop\\Estudios\\Projectos\\Sistema de Inventario\\inventario-app\\backend-dotnet\\api\\API.csproj",
         "packagesPath": "C:\\Users\\cesar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cesar\\OneDrive\\Desktop\\Estudios\\Projectos\\Sistema de Inventario\\inventario-app\\backend-dotnet\\API\\obj\\",
+        "outputPath": "C:\\Users\\cesar\\OneDrive\\Desktop\\Estudios\\Projectos\\Sistema de Inventario\\inventario-app\\backend-dotnet\\api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -129,7 +129,11 @@
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\cesar\\OneDrive\\Desktop\\Estudios\\Projectos\\Sistema de Inventario\\inventario-app\\backend-dotnet\\Entidad\\Entidad.csproj": {
+                "projectPath": "C:\\Users\\cesar\\OneDrive\\Desktop\\Estudios\\Projectos\\Sistema de Inventario\\inventario-app\\backend-dotnet\\Entidad\\Entidad.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -147,6 +151,12 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Npgsql": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -259,7 +269,14 @@
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\cesar\\OneDrive\\Desktop\\Estudios\\Projectos\\Sistema de Inventario\\inventario-app\\backend-dotnet\\Datos\\Datos.csproj": {
+                "projectPath": "C:\\Users\\cesar\\OneDrive\\Desktop\\Estudios\\Projectos\\Sistema de Inventario\\inventario-app\\backend-dotnet\\Datos\\Datos.csproj"
+              },
+              "C:\\Users\\cesar\\OneDrive\\Desktop\\Estudios\\Projectos\\Sistema de Inventario\\inventario-app\\backend-dotnet\\Entidad\\Entidad.csproj": {
+                "projectPath": "C:\\Users\\cesar\\OneDrive\\Desktop\\Estudios\\Projectos\\Sistema de Inventario\\inventario-app\\backend-dotnet\\Entidad\\Entidad.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

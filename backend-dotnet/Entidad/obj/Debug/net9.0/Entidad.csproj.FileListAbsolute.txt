@@ -1,0 +1,12 @@
+C:\Users\cesar\OneDrive\Desktop\Estudios\Projectos\Sistema de Inventario\inventario-app\backend-dotnet\Entidad\bin\Debug\net9.0\Entidad.deps.json
+C:\Users\cesar\OneDrive\Desktop\Estudios\Projectos\Sistema de Inventario\inventario-app\backend-dotnet\Entidad\bin\Debug\net9.0\Entidad.dll
+C:\Users\cesar\OneDrive\Desktop\Estudios\Projectos\Sistema de Inventario\inventario-app\backend-dotnet\Entidad\bin\Debug\net9.0\Entidad.pdb
+C:\Users\cesar\OneDrive\Desktop\Estudios\Projectos\Sistema de Inventario\inventario-app\backend-dotnet\Entidad\obj\Debug\net9.0\Entidad.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cesar\OneDrive\Desktop\Estudios\Projectos\Sistema de Inventario\inventario-app\backend-dotnet\Entidad\obj\Debug\net9.0\Entidad.AssemblyInfoInputs.cache
+C:\Users\cesar\OneDrive\Desktop\Estudios\Projectos\Sistema de Inventario\inventario-app\backend-dotnet\Entidad\obj\Debug\net9.0\Entidad.AssemblyInfo.cs
+C:\Users\cesar\OneDrive\Desktop\Estudios\Projectos\Sistema de Inventario\inventario-app\backend-dotnet\Entidad\obj\Debug\net9.0\Entidad.csproj.CoreCompileInputs.cache
+C:\Users\cesar\OneDrive\Desktop\Estudios\Projectos\Sistema de Inventario\inventario-app\backend-dotnet\Entidad\obj\Debug\net9.0\Entidad.sourcelink.json
+C:\Users\cesar\OneDrive\Desktop\Estudios\Projectos\Sistema de Inventario\inventario-app\backend-dotnet\Entidad\obj\Debug\net9.0\Entidad.dll
+C:\Users\cesar\OneDrive\Desktop\Estudios\Projectos\Sistema de Inventario\inventario-app\backend-dotnet\Entidad\obj\Debug\net9.0\refint\Entidad.dll
+C:\Users\cesar\OneDrive\Desktop\Estudios\Projectos\Sistema de Inventario\inventario-app\backend-dotnet\Entidad\obj\Debug\net9.0\Entidad.pdb
+C:\Users\cesar\OneDrive\Desktop\Estudios\Projectos\Sistema de Inventario\inventario-app\backend-dotnet\Entidad\obj\Debug\net9.0\ref\Entidad.dll

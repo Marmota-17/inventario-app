@@ -985,6 +985,10 @@
       "Datos/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Entidad": "1.0.0",
+          "Npgsql": "9.0.3"
+        },
         "compile": {
           "bin/placeholder/Datos.dll": {}
         },
@@ -1005,6 +1009,10 @@
       "Negocio/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Datos": "1.0.0",
+          "Entidad": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Negocio.dll": {}
         },
