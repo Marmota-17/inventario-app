@@ -8,7 +8,7 @@ Un proyecto limpio y moderno para gestionar **usuarios**, **productos**, **categ
 
 ```bash
 # Clonar repositorio
-git clone https://github.com/tu-usuario/inventario-fullstack.git
+git clone https://github.com/Marmota-17/inventario-app.git
 cd inventario-fullstack
 
 # Crear variables
