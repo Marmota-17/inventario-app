@@ -101,15 +101,30 @@ BEGIN
     RETURNING id INTO nuevo_id;
     RETURN nuevo_id;
 END; $$ LANGUAGE plpgsql;
-
 CREATE OR REPLACE FUNCTION obtener_usuario(p_id INTEGER)
 RETURNS TABLE (
-    id INTEGER, nombre VARCHAR, correo_electronico VARCHAR, hash_contrasena CHAR(60),
-    rol_id INTEGER, activo BOOLEAN, creado_en TIMESTAMP, actualizado_en TIMESTAMP
+    id INTEGER,
+    nombre VARCHAR,
+    correo_electronico VARCHAR,
+    hash_contrasena CHAR(60),
+    rol_id INTEGER,
+    activo BOOLEAN,
+    creado_en TIMESTAMP,
+    actualizado_en TIMESTAMP,
+    rol_nombre VARCHAR
 ) AS $$
 BEGIN
-    RETURN QUERY SELECT * FROM usuarios WHERE id = p_id;
+    RETURN QUERY
+    SELECT
+      u.id, u.nombre, u.correo_electronico, u.hash_contrasena,
+      u.rol_id, u.activo, u.creado_en, u.actualizado_en,
+      r.nombre
+    FROM usuarios u
+    JOIN roles r ON u.rol_id = r.id
+    WHERE u.id = p_id;
 END; $$ LANGUAGE plpgsql;
+
+
 
 CREATE OR REPLACE FUNCTION actualizar_usuario(
     p_id INTEGER, p_nombre VARCHAR, p_correo VARCHAR, p_hash CHAR(60), p_rol_id INTEGER, p_activo BOOLEAN
@@ -128,6 +143,28 @@ CREATE OR REPLACE FUNCTION eliminar_usuario(p_id INTEGER) RETURNS VOID AS $$
 BEGIN
     DELETE FROM usuarios WHERE id = p_id;
 END; $$ LANGUAGE plpgsql;
+
+CREATE OR REPLACE FUNCTION ingresar_sistema(p_nombre VARCHAR, p_pass VARCHAR)
+RETURNS INTEGER AS $$
+DECLARE
+    hashed_pass TEXT;
+    resultado INTEGER := 0;
+BEGIN
+    -- Hashear la contraseña ingresada con SHA256 y convertir a texto hexadecimal
+    hashed_pass := encode(digest(p_pass, 'sha256'), 'hex');
+
+    -- Verificar si el usuario y la contraseña coinciden
+    IF EXISTS (
+        SELECT 1 FROM usuarios
+        WHERE nombre = p_nombre
+          AND hash_contrasena = hashed_pass
+    ) THEN
+        resultado := 1;
+    END IF;
+
+    RETURN resultado;
+END;
+$$ LANGUAGE plpgsql;
 
 -- CATEGORIAS
 CREATE OR REPLACE FUNCTION crear_categoria(
@@ -469,14 +506,6 @@ BEGIN
     RETURN nuevo_id;
 END; $$ LANGUAGE plpgsql;
 
-CREATE OR REPLACE FUNCTION obtener_usuario(p_id INTEGER)
-RETURNS TABLE (
-    id INTEGER, nombre VARCHAR, correo_electronico VARCHAR, hash_contrasena CHAR(60),
-    rol_id INTEGER, activo BOOLEAN, creado_en TIMESTAMP, actualizado_en TIMESTAMP
-) AS $$
-BEGIN
-    RETURN QUERY SELECT * FROM usuarios WHERE id = p_id;
-END; $$ LANGUAGE plpgsql;
 
 CREATE OR REPLACE FUNCTION actualizar_usuario(
     p_id INTEGER, p_nombre VARCHAR, p_correo VARCHAR, p_hash CHAR(60), p_rol_id INTEGER, p_activo BOOLEAN

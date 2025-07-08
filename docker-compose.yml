@@ -1,0 +1,56 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:15
+    container_name: inventario_db
+    environment:
+      POSTGRES_DB: inventario_simple
+      POSTGRES_USER: app_user
+      POSTGRES_PASSWORD: mi_password123
+    volumes:
+      - db_data:/var/lib/postgresql/data
+      - ./database/inventario.sql:/docker-entrypoint-initdb.d/01_inventario.sql
+      - ./database/inventario_Procedimientos.sql:/docker-entrypoint-initdb.d/02_procedimientos.sql
+    ports:
+      - "5432:5432"
+    networks:
+      - inventario_network
+
+  backend:
+    build:
+      context: ./backend-dotnet
+      dockerfile: Dockerfile
+    container_name: inventario_api
+    depends_on:
+      - db
+    environment:
+      ConnectionStrings__DefaultConnection: "Host=db;Port=5432;Database=inventario_simple;Username=app_user;Password=mi_password123"
+      ASPNETCORE_ENVIRONMENT: Development
+    ports:
+      - "5043:5043"
+    networks:
+      - inventario_network
+
+  frontend:
+    build:
+      context: ./frontend-next
+      dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_API_URL: "http://backend:5043"   # <-- Aquí el arg para build
+    container_name: inventario_web
+    depends_on:
+      - backend
+    environment:
+      NEXT_PUBLIC_API_URL: "http://backend:5043"   # <-- Aquí para runtime
+    ports:
+      - "80:3000"
+    networks:
+      - inventario_network
+
+volumes:
+  db_data:
+
+networks:
+  inventario_network:
+    driver: bridge

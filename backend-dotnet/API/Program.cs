@@ -4,7 +4,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddOpenApi();
-
+builder.WebHost.UseUrls("http://0.0.0.0:5043");
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())

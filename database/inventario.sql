@@ -147,3 +147,10 @@ BEGIN
     END LOOP;
 END;
 $$ LANGUAGE plpgsql;
+
+
+INSERT INTO usuarios (nombre, correo_electronico, hash_contrasena, rol_id, activo)
+VALUES
+  ('admin', 'admin@correo','123456', 2, TRUE),
+  ('empleado1', 'empleado1@correo','123456', 1, TRUE),
+  ('cliente1', 'cliente1@correo','123456', 3, TRUE);

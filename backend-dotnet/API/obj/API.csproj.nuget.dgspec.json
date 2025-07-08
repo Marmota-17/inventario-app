@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cesar\\OneDrive\\Desktop\\Estudios\\Projectos\\Sistema de Inventario\\inventario-app\\backend-dotnet\\api\\API.csproj": {}
+    "C:\\Users\\cesar\\OneDrive\\Desktop\\Estudios\\Projectos\\Sistema de Inventario\\inventario-app\\backend-dotnet\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cesar\\OneDrive\\Desktop\\Estudios\\Projectos\\Sistema de Inventario\\inventario-app\\backend-dotnet\\api\\API.csproj": {
+    "C:\\Users\\cesar\\OneDrive\\Desktop\\Estudios\\Projectos\\Sistema de Inventario\\inventario-app\\backend-dotnet\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cesar\\OneDrive\\Desktop\\Estudios\\Projectos\\Sistema de Inventario\\inventario-app\\backend-dotnet\\api\\API.csproj",
+        "projectUniqueName": "C:\\Users\\cesar\\OneDrive\\Desktop\\Estudios\\Projectos\\Sistema de Inventario\\inventario-app\\backend-dotnet\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\cesar\\OneDrive\\Desktop\\Estudios\\Projectos\\Sistema de Inventario\\inventario-app\\backend-dotnet\\api\\API.csproj",
+        "projectPath": "C:\\Users\\cesar\\OneDrive\\Desktop\\Estudios\\Projectos\\Sistema de Inventario\\inventario-app\\backend-dotnet\\API\\API.csproj",
         "packagesPath": "C:\\Users\\cesar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cesar\\OneDrive\\Desktop\\Estudios\\Projectos\\Sistema de Inventario\\inventario-app\\backend-dotnet\\api\\obj\\",
+        "outputPath": "C:\\Users\\cesar\\OneDrive\\Desktop\\Estudios\\Projectos\\Sistema de Inventario\\inventario-app\\backend-dotnet\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

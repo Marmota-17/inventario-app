@@ -36,17 +36,22 @@ public class DUsuarios
         using var reader = cmd.ExecuteReader();
         if (reader.Read())
         {
-            return new EUsuarios
-            {
-                Id = reader.GetInt32(0),
-                Nombre = reader.GetString(1),
-                CorreoElectronico = reader.GetString(2),
-                HashContrasena = reader.GetString(3),
-                RolId = reader.GetInt32(4),
-                Activo = reader.GetBoolean(5),
-                CreadoEn = reader.GetDateTime(6),
-                ActualizadoEn = reader.IsDBNull(7) ? (DateTime?)null : reader.GetDateTime(7)
-            };
+return new EUsuarios
+{
+    Id = reader.GetInt32(0),
+    Nombre = reader.GetString(1),
+    CorreoElectronico = reader.GetString(2),
+    HashContrasena = reader.GetString(3),
+    RolId = reader.GetInt32(4),
+    Activo = reader.GetBoolean(5),
+    CreadoEn = reader.GetDateTime(6),
+    ActualizadoEn = reader.IsDBNull(7) ? (DateTime?)null : reader.GetDateTime(7),
+    Rol = new ERoles
+    {
+        Id = reader.GetInt32(4),      // rol_id
+        Nombre = reader.GetString(8)  // rol_nombre
+    }
+};
         }
         return null;
     }
